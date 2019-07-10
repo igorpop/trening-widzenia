@@ -6,7 +6,7 @@ import Patterns from '../../components/Patterns/Patterns';
 const StyledWrapper = styled.div`
 width:100vw ;
 height: 100vh;
-overflow-y: hidden;
+overflow: hidden;
 `;
 
 
