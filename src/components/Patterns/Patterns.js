@@ -11,7 +11,7 @@ left:0;
 `;
 
 const Element1 = styled.div`
-position:absolute;
+position:fixed;
 top: 12vh;
 right: -60px;
 z-index: 9998;
