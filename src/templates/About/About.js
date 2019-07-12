@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import ImageAbout from '../../components/ImageAbout/ImageAbout';
+import Gallery from '../../components/Gallery/Gallery';
 
 const StyledWrapper = styled.div`
 display: flex;
@@ -51,6 +52,7 @@ text-align:right;
 font-family: ${({ theme }) => theme.font.family.montserrat};
 font-size: ${({ theme }) => theme.font.size.xxs};
 font-weight: ${({ theme }) => theme.font.weight.bold};
+margin-top: 10px;
 `;
 
 const TextWrap = [
@@ -62,6 +64,11 @@ const TextWrap = [
 
    '-propagator zdrowego stylu życia w licznych programach TV i audycjach radiowych.',
 ]
+
+const ShowGallery = styled.div`
+position:relative;
+display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+`;
 
 const About = () => {
    const [isOpen, setTextState] = useState(false);
@@ -77,11 +84,13 @@ const About = () => {
             <NameWrapper>Jacek Niegierysz</NameWrapper>
             <StyledDescription>Absolwent wrocławskiej Akademii Medycznej ze specjalizacją z okulistyki, medycyny naturalnej i akupunktury. Ponad to praktyk NLP - tytuł wydany przez Instytut psychoterapii we Wrocławiu, trener technik relaksacyjnych i wizualnych/tytuł uzyskany przez Niepubliczne Centrum Kształcenia podyplomowego we Wrocławiu.',
  </StyledDescription>
+
             {TextWrap.map(item => (
                <StyledWrapDescription isOpen={isOpen} key={item} >
                   {item}
                </StyledWrapDescription>
             ))}
+            <ShowGallery isOpen={isOpen}><Gallery /></ShowGallery>
          </StyledWrapper>
          <MoreLess onClick={toggleLessMore}>{isOpen ? "pokaż mniej" : "pokaż więcej"}</MoreLess>
       </>

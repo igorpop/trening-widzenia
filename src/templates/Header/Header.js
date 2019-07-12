@@ -13,7 +13,7 @@ const StyledWrapper = styled.nav`
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   z-index: 9999;

@@ -6,7 +6,7 @@ const StyledHamburger = styled.button`
 padding: 15px;
 border: none;
 background:none;
-position:absolute;
+position:fixed;
 right: 15px;
 z-index: 9999;
 

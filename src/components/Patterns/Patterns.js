@@ -8,18 +8,18 @@ const StyledWrapper = styled.div`
 position: relative;
 top:0;
 left:0;
+z-index: 9999;
 `;
 
 const Element1 = styled.div`
 position:absolute;
 top: 12vh;
-right: -60px;
+left: 68vw;
 z-index: 9998;
 padding:0;
 
 img {
  width: 180px;
- 
 }
 `;
 

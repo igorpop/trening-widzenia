@@ -3,6 +3,7 @@ module.exports = {
     title: `Akademia dobrego widzenia`,
     description: `Trening widzenia`,
     author: `@igorpoplawski`,
+    pathPrefix: "/igorpop",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
