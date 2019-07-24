@@ -13,7 +13,7 @@ img {
 `;
 
 const ImageAbout = () => (
- <ImageWrapper><img src={Image} /></ImageWrapper>
+ <ImageWrapper><img src={Image} alt="O mnie" /></ImageWrapper>
 );
 
 export default ImageAbout;

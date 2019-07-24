@@ -5,11 +5,11 @@ import styled from 'styled-components';
 const FramePose = posed.div({
   init: {
     applyAtEnd: { display: 'none' },
-    opacity: 0
+    opacity: 0,
   },
   zoom: {
     applyAtStart: { display: 'block' },
-    opacity: 1
+    opacity: 1,
   }
 });
 
@@ -56,6 +56,7 @@ const Image = styled(ImagePose)`
 display: block;
 max-width: 100%;
 margin: auto;
+z-index: 9999;
 `;
 
 
